@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         elapsedTime += Time.deltaTime;
-        Debug.Log(elapsedTime);
+        //Debug.Log(elapsedTime);
         CheckEvent(orderTriggerTime, orderTriggered, onOrderTime, ItemName.Order);
         CheckEvent(waitressTriggerTime, waitressTriggered, onWaitressTime, ItemName.Waitress);
         CheckEvent(restroomTriggerTime, restroomTriggered, onRestroomTime, ItemName.Restroom);

@@ -363,6 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textPanel: {fileID: 124921019}
+  tipTexts:
+  - {fileID: 11400000, guid: 96d460adfaabaf94592d34129d75ff24, type: 2}
 --- !u!114 &264939815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +384,7 @@ MonoBehaviour:
       - m_Target: {fileID: 264939812}
         m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
         m_MethodName: ShowText
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -774,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 05cbe4cdd13b2fd48a9b3305c6b6ca56, type: 2}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: limitGameTime
-      value: 10
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: restroomEvent

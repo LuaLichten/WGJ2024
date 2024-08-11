@@ -6,6 +6,9 @@ using TMPro;
 public class TextManager : MonoBehaviour
 {
     public GameObject textPanel;
+    public List<TipTextSO> tipTexts;
+
+    private int tryIndex;
     void Start()
     {
         
@@ -17,9 +20,14 @@ public class TextManager : MonoBehaviour
         
     }
 
-    public void ShowText()
+    public void ShowText(ItemName name)
     {
         textPanel.SetActive(true);
-        textPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "AAAAA";
+        textPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = FindText(name).text;
+    }
+
+    public TipTextSO FindText(ItemName name)
+    {
+        return tipTexts.Find(x => x.itemName.Equals(name) && x.minTryIndex <= tryIndex);
     }
 }
