@@ -44,4 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7854d4e44a17e1842aa0e0cd415dbc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limitGameTime: 20
+  limitGameTime: 60
+  orderTriggerTime: 5
+  waitressTriggerTime: 15
+  restroomTriggerTime: 30
+  truckTriggerTime: 45
+  onOrderTime: {fileID: 11400000, guid: e0622c50a19130345ac07093eda6281a, type: 2}
+  onWaitressTime: {fileID: 11400000, guid: 3467c66af3deaa64a860d2a6350b2915, type: 2}
+  onRestroomTime: {fileID: 11400000, guid: abb882182f843384b9a6cb4c9a7d3bdf, type: 2}
+  onTruckTime: {fileID: 11400000, guid: 05cbe4cdd13b2fd48a9b3305c6b6ca56, type: 2}
