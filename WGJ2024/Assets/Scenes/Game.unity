@@ -439,7 +439,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPanel: {fileID: 124921019}
   tipTexts:
+  - {fileID: 11400000, guid: 7387003d70751ff4cb2977aea99fe67a, type: 2}
   - {fileID: 11400000, guid: 96d460adfaabaf94592d34129d75ff24, type: 2}
+  - {fileID: 11400000, guid: 98198a862ffb30c43a5a7287af55eb86, type: 2}
+  - {fileID: 11400000, guid: 6b86c520dd30bca4a98475d316674e66, type: 2}
+  - {fileID: 11400000, guid: 3477efd9b084d2c459df9a4ca5860613, type: 2}
 --- !u!114 &264939815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2744,7 +2748,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 05cbe4cdd13b2fd48a9b3305c6b6ca56, type: 2}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: limitGameTime
-      value: 100000
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: restroomEvent
@@ -2764,19 +2768,19 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3467c66af3deaa64a860d2a6350b2915, type: 2}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: orderTriggerTime
-      value: 200000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: truckTriggerTime
-      value: 200000
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: restroomTriggerTime
-      value: 200000
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3498853325480062714, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: waitressTriggerTime
-      value: 200000
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5025307231088029014, guid: a7d33450cad810a44afa7bdbbffb6c3f, type: 3}
       propertyPath: m_LocalPosition.x

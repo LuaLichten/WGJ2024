@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a61b3071837cd134abf9d41b106573dc, type: 3}
-  m_Name: RecipeTip
+  m_Name: TruckTip
   m_EditorClassIdentifier: 
-  text: Livro de receitas... Hum, sopa de cebola parece uma boa alternativa!
-  itemName: 0
-  minTryIndex: 1
+  text: Esses ingredientes que chegaram podem me servir de alguma forma!
+  itemName: 2
+  minTryIndex: 0
