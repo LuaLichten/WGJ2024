@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
     {
         if (!condition && elapsedTime >= time)
         {
-            Debug.Log("aiai");
             eventName.TriggerEvent(name);
             return true;
         }
