@@ -20,10 +20,10 @@ public class GameManager : MonoBehaviour
     public GameItemNameEvent onRestroomTime;
     public GameItemNameEvent onTruckTime;
 
-    private bool orderTriggered;
-    private bool waitressTriggered;
-    private bool restroomTriggered;
-    private bool truckTriggered;
+    private bool orderTriggered = false;
+    private bool waitressTriggered = false;
+    private bool restroomTriggered = false;
+    private bool truckTriggered = false;
     private float elapsedTime;
     void Start()
     {
@@ -35,10 +35,10 @@ public class GameManager : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
         //Debug.Log(elapsedTime);
-        CheckEvent(orderTriggerTime, orderTriggered, onOrderTime, ItemName.Order);
-        CheckEvent(waitressTriggerTime, waitressTriggered, onWaitressTime, ItemName.Waitress);
-        CheckEvent(restroomTriggerTime, restroomTriggered, onRestroomTime, ItemName.Restroom);
-        CheckEvent(truckTriggerTime, truckTriggered, onTruckTime, ItemName.Truck);
+        orderTriggered = CheckEvent(orderTriggerTime, orderTriggered, onOrderTime, ItemName.Order);
+        waitressTriggered = CheckEvent(waitressTriggerTime, waitressTriggered, onWaitressTime, ItemName.Waitress);
+        restroomTriggered = CheckEvent(restroomTriggerTime, restroomTriggered, onRestroomTime, ItemName.Restroom);
+        truckTriggered = CheckEvent(truckTriggerTime, truckTriggered, onTruckTime, ItemName.Truck);
         if (elapsedTime >= limitGameTime)
         {
             SceneManager.LoadScene("Menu");
@@ -47,14 +47,17 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void CheckEvent(float time, bool condition, GameItemNameEvent eventName, ItemName name)
+    private bool CheckEvent(float time, bool condition, GameItemNameEvent eventName, ItemName name)
     {
         if (!condition && elapsedTime >= time)
         {
+            Debug.Log("aiai");
             eventName.TriggerEvent(name);
-            condition = true;
+            return true;
         }
-            
+        if (condition)
+            return true;
 
+        return false;
     }
 }
