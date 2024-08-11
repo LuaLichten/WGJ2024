@@ -4,7 +4,11 @@ using UnityEngine;
 
 public enum ItemName
 {
-    RecipeBook
+    RecipeBook,
+    Order,
+    Truck,
+    Waitress,
+    Restroom
 }
 public class Iteractable : MonoBehaviour
 {
